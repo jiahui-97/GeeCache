@@ -11,7 +11,7 @@
 - [x] 一致性哈希
 - [x] 分布式节点
 - [x] 防止缓存击穿
-- [ ] 使用 Protobuf 通信
+- [x] 使用 Protobuf 通信
 
 ## 总结
 ### 1. LRU 缓存淘汰策略
@@ -77,5 +77,6 @@ type ByteView struct {
 具体方式就是将当前正在请求的 key 保存到 map 中，每次加锁访问 map，若有 key，则等待结果，若无 key，则请求
 
 ### 7. 使用 Protobuf 通信
+pb 通信，序列化成二进制，反序列化解析，比 json 性能高
 
 参考：https://geektutu.com/post/geecache.html
