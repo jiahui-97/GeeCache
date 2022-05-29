@@ -1,4 +1,4 @@
-# GeeCache
+# geecache
 ## 简介
 
 一个分布式缓存系统
